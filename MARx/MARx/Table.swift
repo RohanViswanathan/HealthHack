@@ -14,16 +14,23 @@ class Table {
     var scroll = UIScrollView()
     var view: TableViewDelegate!
     
-    init(numBoxes: Int, width: Int, height: Int, view: TableViewDelegate) {
+    init(width: Int, height: Int, view: TableViewDelegate) {
+        
+        let meds = UserDefaults.standard.array(forKey: "meds") as! [String]
+        
+        let numBoxes = meds.count
+        
         self.view = view
         self.scroll = UIScrollView(frame: CGRect(x: 1, y: 20, width: width+2, height: height))
         self.scroll.delegate = view
         self.scroll.contentSize = CGSize(width: CGFloat(width), height: CGFloat(100*numBoxes))
         
-        
-        for i in 0...numBoxes {
+        for i in 0...numBoxes-1 {
+            let string = meds[i]
+            let parts = string.components(separatedBy: ";")
+            
             let box = UIButton(frame: CGRect(x: 1, y: 20+(i*100), width: width+2, height: 100))
-            box.setTitle("reminder", for: .normal)
+            box.setTitle("Take"+parts[0], for: .normal)
             box.backgroundColor = UIColor.white
             box.titleLabel!.textColor = UIColor.lightGray
             box.titleLabel!.textAlignment = .center

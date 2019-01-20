@@ -132,6 +132,7 @@
                                         <state key="normal" title="Save"/>
                                         <connections>
                                             <action selector="SaveMed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kwS-cZ-8IK"/>
+                                            <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cNN-Na-ou8"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Mt-JC-0Qi">
@@ -165,12 +166,15 @@
                     <tabBarItem key="tabBarItem" title="Item" id="E54-Vl-EP8"/>
                     <navigationItem key="navigationItem" id="6TK-1v-KmL"/>
                     <connections>
-                        <outlet property="days" destination="TQS-XX-71G" id="Lw6-8f-QQg"/>
+                        <outlet property="days" destination="TQS-XX-71G" id="O4M-3t-TPp"/>
+                        <outlet property="id" destination="IId-7l-uSM" id="wqI-yQ-AX2"/>
+                        <outlet property="info" destination="Wtn-x3-NWl" id="iPV-Dk-bOI"/>
                         <outlet property="medID" destination="IId-7l-uSM" id="7go-qF-SCx"/>
                         <outlet property="medInfo" destination="Wtn-x3-NWl" id="h4T-Fv-PXc"/>
                         <outlet property="medName" destination="4sB-Na-Pua" id="1rw-Iy-iyx"/>
-                        <outlet property="popup" destination="bPt-SY-lt9" id="Pog-2N-RNw"/>
-                        <outlet property="times" destination="hhV-63-VwB" id="dbM-I2-bmQ"/>
+                        <outlet property="name" destination="4sB-Na-Pua" id="5IC-69-9ge"/>
+                        <outlet property="popup" destination="bPt-SY-lt9" id="wdI-42-pOk"/>
+                        <outlet property="times" destination="hhV-63-VwB" id="Npl-gR-iQy"/>
                         <segue destination="QML-us-kKe" kind="show" id="TTy-ta-jLp"/>
                     </connections>
                 </viewController>

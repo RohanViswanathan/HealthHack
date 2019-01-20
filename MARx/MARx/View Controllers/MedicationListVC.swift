@@ -16,8 +16,13 @@ class MedicationListVC: UIViewController, TableViewDelegate {
         
     }
     
+    @IBOutlet weak var popup: UIView!
+    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var id: UITextField!
+    @IBOutlet weak var info: UITextView!
+    @IBOutlet weak var days: UITextField!
+    @IBOutlet weak var times: UITextField!
     
-    var table: Table!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +30,16 @@ class MedicationListVC: UIViewController, TableViewDelegate {
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
         let screenHeight = screenSize.height
-        table = Table(numBoxes: 2, width: Int(screenWidth), height: Int(screenHeight)+50, view: self)
     }
 
+    @IBAction func save(_ sender: Any) {
+        var full = name.text!+";"+id.text!
+        full += ";"+info.text!
+        full += ";"+days.text!+";"+times.text!
+        var meds = UserDefaults.standard.array(forKey: "meds") as! [String]
+        meds.append(full)
+        
+        UserDefaults.standard.set(meds, forKey: "meds")
+    }
 }
 
