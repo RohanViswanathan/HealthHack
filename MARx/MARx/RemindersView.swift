@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Reminders: UIViewController {
+class RemindersView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
