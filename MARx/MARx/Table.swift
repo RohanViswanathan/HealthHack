@@ -14,7 +14,7 @@ class Table {
     var scroll = UIScrollView()
     
     
-    init(numBoxes: Int, width: Int, height: Int, view: RemindersView) {
+    init(numBoxes: Int, width: Int, height: Int, view: TableViewDelegate) {
         self.scroll = UIScrollView(frame: CGRect(x: 1, y: 20, width: width+2, height: height))
         self.scroll.delegate = view
         self.scroll.contentSize = CGSize(width: CGFloat(width), height: CGFloat(100*numBoxes))
