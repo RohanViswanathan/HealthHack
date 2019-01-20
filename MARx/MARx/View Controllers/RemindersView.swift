@@ -29,7 +29,6 @@ class RemindersView: UIViewController, TableViewDelegate {
     }
     
     @objc func buttonPressed(sender: UIButton!) {
-        let medView: MedVC = MedVC()
         let newViewController = self.storyboard?.instantiateViewController(withIdentifier:"Med VC")
         self.present(newViewController!, animated: true, completion: nil)
     }

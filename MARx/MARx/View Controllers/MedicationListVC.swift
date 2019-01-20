@@ -43,8 +43,8 @@ class MedicationListVC: UIViewController, TableViewDelegate {
         full += ";"+days.text!+";"+times.text!
         var meds = UserDefaults.standard.array(forKey: "meds")
         if (meds != nil) {
-            meds = meds as! [String]
-            meds.append(full)
+            var newmeds: [String] = UserDefaults.standard.array(forKey: "meds") as! [String]
+            newmeds.append(full)
         } else {
             meds = []
             meds?.append(full)
