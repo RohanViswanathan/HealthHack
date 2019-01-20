@@ -41,21 +41,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQf-Lu-0FA">
-                                <rect key="frame" x="144" y="83" width="87" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Photo Tester"/>
-                                <connections>
-                                    <action selector="testPic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EJX-EL-p10"/>
-                                </connections>
-=======
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7R5-34-VGw">
                                 <rect key="frame" x="329" y="20" width="30" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="+"/>
->>>>>>> aca858b69c40c2c65b7bb2b56f816ab61f5782b9
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -70,21 +60,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1237.5999999999999" y="-85.007496251874073"/>
-        </scene>
-        <!--Take Photo-->
-        <scene sceneID="wkH-J6-OyD">
-            <objects>
-                <viewController id="rz5-eD-yvJ" userLabel="Take Photo" customClass="TakePhotoVC" customModule="MARx" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mu6-BU-Edu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="OVV-cG-AT4"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aXc-73-QA0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2964" y="-11"/>
         </scene>
         <!--Reminders-->
         <scene sceneID="n82-Ws-KY5">
@@ -145,7 +120,6 @@
                                 <state key="normal" title="Take Picture"/>
                                 <connections>
                                     <action selector="onMedTakePic:" destination="7Vt-oQ-5sh" eventType="touchUpInside" id="A20-Y0-x92"/>
-                                    <segue destination="rz5-eD-yvJ" kind="show" id="W9h-Yz-HbZ"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PHs-tf-8Ft" userLabel="MedicationImageTaker">
