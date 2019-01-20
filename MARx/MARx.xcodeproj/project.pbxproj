@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B5285D221F522F5003DCF7D /* TableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5285D121F522F5003DCF7D /* TableViewDelegate.swift */; };
 		0B53C1A921F4FA4500990B74 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B53C1A821F4FA4500990B74 /* Medication.swift */; };
 		0B53C1AB21F4FD6100990B74 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B53C1AA21F4FD6100990B74 /* Reminder.swift */; };
 		0B60D81621F504440069F4B1 /* MedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B60D81521F504440069F4B1 /* MedVC.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B5285D121F522F5003DCF7D /* TableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDelegate.swift; sourceTree = "<group>"; };
 		0B53C1A821F4FA4500990B74 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
 		0B53C1AA21F4FD6100990B74 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		0B60D81521F504440069F4B1 /* MedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedVC.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				D1EF043721F4F31300A662D4 /* MedicationListVC.swift */,
 				D25997C021F4F9E2007C6E4F /* RemindersView.swift */,
 				0B60D81521F504440069F4B1 /* MedVC.swift */,
+				0B5285D121F522F5003DCF7D /* TableViewDelegate.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				D25997C121F4F9E2007C6E4F /* RemindersView.swift in Sources */,
 				D1EF043821F4F31300A662D4 /* MedicationListVC.swift in Sources */,
 				D1EF043E21F4F31300A662D4 /* MARx.xcdatamodeld in Sources */,
+				0B5285D221F522F5003DCF7D /* TableViewDelegate.swift in Sources */,
 				0B60D81621F504440069F4B1 /* MedVC.swift in Sources */,
 				D25997BF21F4F838007C6E4F /* Table.swift in Sources */,
 				D1EF043621F4F31300A662D4 /* AppDelegate.swift in Sources */,
