@@ -38,6 +38,7 @@ class MedicationListVC: UIViewController, TableViewDelegate {
     
     @IBAction func save(_ sender: Any) {
         
+        
         var full = name.text!+";"+id.text!
         full += ";"+info.text!
         full += ";"+days.text!+";"+times.text!
