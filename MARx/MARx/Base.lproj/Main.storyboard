@@ -122,18 +122,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNN-Do-zsw">
-                                <rect key="frame" x="21" y="167" width="85" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="MedVC"/>
-                                <state key="normal" title="Take Picture"/>
-                                <connections>
-                                    <action selector="onMedTakePic:" destination="7Vt-oQ-5sh" eventType="touchUpInside" id="A20-Y0-x92"/>
-                                    <action selector="takePhoto:" destination="QML-us-kKe" eventType="touchUpInside" id="chM-pm-BEk"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PHs-tf-8Ft" userLabel="MedicationImageTaker">
-                                <rect key="frame" x="16" y="77" width="94" height="90"/>
+                                <rect key="frame" x="78" y="82" width="218" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Medication Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDl-Ym-IsD">
@@ -143,6 +133,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNN-Do-zsw">
+                                <rect key="frame" x="145" y="288" width="85" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="MedVC"/>
+                                <state key="normal" title="Take Picture"/>
+                                <connections>
+                                    <action selector="onMedTakePic:" destination="7Vt-oQ-5sh" eventType="touchUpInside" id="A20-Y0-x92"/>
+                                    <action selector="takePhoto:" destination="QML-us-kKe" eventType="touchUpInside" id="chM-pm-BEk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="T9f-i6-iiC"/>
@@ -154,7 +154,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NYp-Oa-dwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="7Vt-oQ-5sh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2409" y="148"/>
+            <point key="canvasLocation" x="2408.8000000000002" y="147.97601199400302"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
