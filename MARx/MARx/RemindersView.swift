@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class RemindersView: UIViewController {
+class RemindersView: UIViewController, UIScrollViewDelegate {
     
     
     
@@ -19,7 +19,7 @@ class RemindersView: UIViewController {
         let screenWidth = screenSize.width
         let screenHeight = screenSize.height
         // Do any additional setup after loading the view, typically from a nib.
-        let table = Table(numBoxes: 5, width: Int(screenWidth), view: self)
+        let table = Table(numBoxes: 50, width: Int(screenWidth), height: Int(screenHeight), view: self)
     }
     
     @objc func alertHandler(_ sender: Any, title: String, message: String) {
