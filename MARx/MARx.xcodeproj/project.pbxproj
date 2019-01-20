@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B53C1A921F4FA4500990B74 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B53C1A821F4FA4500990B74 /* Medication.swift */; };
+		0B53C1AB21F4FD6100990B74 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B53C1AA21F4FD6100990B74 /* Reminder.swift */; };
 		D1EF043621F4F31300A662D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EF043521F4F31300A662D4 /* AppDelegate.swift */; };
 		D1EF043821F4F31300A662D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EF043721F4F31300A662D4 /* ViewController.swift */; };
 		D1EF043B21F4F31300A662D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EF043921F4F31300A662D4 /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B53C1A821F4FA4500990B74 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		0B53C1AA21F4FD6100990B74 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		D1EF043221F4F31300A662D4 /* MARx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MARx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EF043521F4F31300A662D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1EF043721F4F31300A662D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +116,8 @@
 				D1EF044121F4F31400A662D4 /* LaunchScreen.storyboard */,
 				D1EF044421F4F31500A662D4 /* Info.plist */,
 				D1EF043C21F4F31300A662D4 /* MARx.xcdatamodeld */,
+				0B53C1A821F4FA4500990B74 /* Medication.swift */,
+				0B53C1AA21F4FD6100990B74 /* Reminder.swift */,
 			);
 			path = MARx;
 			sourceTree = "<group>";
@@ -265,11 +271,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B53C1A921F4FA4500990B74 /* Medication.swift in Sources */,
 				D25997C121F4F9E2007C6E4F /* RemindersView.swift in Sources */,
 				D1EF043821F4F31300A662D4 /* ViewController.swift in Sources */,
 				D1EF043E21F4F31300A662D4 /* MARx.xcdatamodeld in Sources */,
 				D25997BF21F4F838007C6E4F /* Table.swift in Sources */,
 				D1EF043621F4F31300A662D4 /* AppDelegate.swift in Sources */,
+				0B53C1AB21F4FD6100990B74 /* Reminder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
