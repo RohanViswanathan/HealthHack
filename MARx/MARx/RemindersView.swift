@@ -31,7 +31,7 @@ class RemindersView: UIViewController, UIScrollViewDelegate {
     
     @objc func buttonPressed(sender: UIButton!) {
         let medView: MedVC = MedVC()
-        
-        self.present(medView, animated: true, completion: nil)
+        let newViewController = self.storyboard?.instantiateViewController(withIdentifier:"Med VC")
+        self.present(newViewController!, animated: true, completion: nil)
     }
 }

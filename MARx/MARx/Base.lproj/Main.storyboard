@@ -90,10 +90,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="9FY-O7-kpL"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="QML-us-kKe" kind="show" id="BUz-cM-J8z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="szy-mQ-yiJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1228" y="629"/>
+            <point key="canvasLocation" x="1228" y="628.33583208395805"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wpV-bx-XaM">
@@ -117,7 +120,7 @@
         <!--Med VC-->
         <scene sceneID="8O1-vH-cNi">
             <objects>
-                <viewController id="QML-us-kKe" userLabel="Med VC" customClass="MedVC" customModule="MARx" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Med VC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="QML-us-kKe" userLabel="Med VC" customClass="MedVC" customModule="MARx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u7h-z9-X1f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,7 +161,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="TTy-ta-jLp"/>
+        <segue reference="BUz-cM-J8z"/>
         <segue reference="oF1-hT-3bn"/>
     </inferredMetricsTieBreakers>
 </document>
