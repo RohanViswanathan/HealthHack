@@ -12,9 +12,10 @@ import UIKit
 class Table {
     var boxes: [UIButton] = []
     var scroll = UIScrollView()
-    
+    var view: TableViewDelegate!
     
     init(numBoxes: Int, width: Int, height: Int, view: TableViewDelegate) {
+        self.view = view
         self.scroll = UIScrollView(frame: CGRect(x: 1, y: 20, width: width+2, height: height))
         self.scroll.delegate = view
         self.scroll.contentSize = CGSize(width: CGFloat(width), height: CGFloat(100*numBoxes))
@@ -28,7 +29,8 @@ class Table {
             box.titleLabel!.textAlignment = .center
             box.layer.borderWidth = 1
             box.layer.borderColor = UIColor.lightGray.cgColor
-            box.addTarget(view, action: #selector(view.buttonPressed), for: .touchUpInside)
+            box.addTarget(view, action: #selector(buttonPressed), for: .touchUpInside)
+            
             
             let time = UILabel(frame: CGRect(x: 250, y: 20+(i*100), width: width-248, height: 100))
             time.text = "12:00"
@@ -39,6 +41,12 @@ class Table {
             boxes.append(box)
         }
         
-        view.view.addSubview(scroll)
+        view.mainView.addSubview(scroll)
     }
+    
+    @objc func buttonPressed() {
+        
+    }
+    
+    
 }

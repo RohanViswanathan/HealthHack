@@ -10,11 +10,18 @@ import UIKit
 
 class MedicationListVC: UIViewController, TableViewDelegate {
     
+    var mainView: UIView!
+    
+    func buttonPressed() {
+        
+    }
+    
+    
     var table: Table!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        mainView = view
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
         let screenHeight = screenSize.height
