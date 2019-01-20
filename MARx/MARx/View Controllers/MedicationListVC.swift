@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MedicationListVC
 //  MARx
 //
 //  Created by Rohan Viswanathan on 1/20/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MedicationListVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
