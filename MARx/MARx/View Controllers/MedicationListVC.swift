@@ -8,11 +8,17 @@
 
 import UIKit
 
-class MedicationListVC: UIViewController {
+class MedicationListVC: UIViewController, TableViewDelegate {
+    
+    var table: Table!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        let screenHeight = screenSize.height
+        table = Table(numBoxes: 2, width: Int(screenWidth), height: Int(screenHeight)-20, view: self)
     }
 
 }
