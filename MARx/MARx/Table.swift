@@ -12,7 +12,7 @@ import UIKit
 class Table {
     var boxes: [UILabel] = []
     
-    init(numBoxes: Int, width: Int, height: Int) {
+    init(numBoxes: Int, width: Int, height: Int, view: UIViewController) {
         for i in 0...numBoxes {
             let box = UILabel(frame: CGRect(x: 0, y: i*100, width: width, height: 100))
             box.text = "Hello"
@@ -21,9 +21,6 @@ class Table {
             box.layer.borderWidth = 2
             box.layer.borderColor = UIColor.lightGray.cgColor
             boxes.append(box)
-            
         }
-        
-        
     }
 }
