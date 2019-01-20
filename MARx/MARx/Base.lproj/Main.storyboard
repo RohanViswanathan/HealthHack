@@ -47,7 +47,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="+"/>
                                 <connections>
-                                    <action selector="addMeds:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hIP-Ny-CD6"/>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NSg-mJ-gaT"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyI-Oi-s2x">
@@ -131,7 +131,6 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Save"/>
                                         <connections>
-                                            <action selector="SaveMed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kwS-cZ-8IK"/>
                                             <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cNN-Na-ou8"/>
                                         </connections>
                                     </button>
@@ -169,9 +168,6 @@
                         <outlet property="days" destination="TQS-XX-71G" id="O4M-3t-TPp"/>
                         <outlet property="id" destination="IId-7l-uSM" id="wqI-yQ-AX2"/>
                         <outlet property="info" destination="Wtn-x3-NWl" id="iPV-Dk-bOI"/>
-                        <outlet property="medID" destination="IId-7l-uSM" id="7go-qF-SCx"/>
-                        <outlet property="medInfo" destination="Wtn-x3-NWl" id="h4T-Fv-PXc"/>
-                        <outlet property="medName" destination="4sB-Na-Pua" id="1rw-Iy-iyx"/>
                         <outlet property="name" destination="4sB-Na-Pua" id="5IC-69-9ge"/>
                         <outlet property="popup" destination="bPt-SY-lt9" id="wdI-42-pOk"/>
                         <outlet property="times" destination="hhV-63-VwB" id="Npl-gR-iQy"/>

@@ -31,8 +31,13 @@ class MedicationListVC: UIViewController, TableViewDelegate {
         let screenWidth = screenSize.width
         let screenHeight = screenSize.height
     }
-
+    
+    @IBAction func add(_ sender: Any) {
+        popup.isHidden = false
+    }
+    
     @IBAction func save(_ sender: Any) {
+        
         var full = name.text!+";"+id.text!
         full += ";"+info.text!
         full += ";"+days.text!+";"+times.text!
@@ -40,6 +45,8 @@ class MedicationListVC: UIViewController, TableViewDelegate {
         meds.append(full)
         
         UserDefaults.standard.set(meds, forKey: "meds")
+        
+        popup.isHidden = true
     }
 }
 
