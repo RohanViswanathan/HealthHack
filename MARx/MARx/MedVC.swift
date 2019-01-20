@@ -1,5 +1,5 @@
 //
-//  TakePhotoVC.swift
+//  MedVC.swift
 //  MARx
 //
 //  Created by Linus Zheng on 1/20/19.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class TakePhotoVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
-    @IBOutlet weak var medPhotoUI: UIImageView!
+class MedVC: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    @IBOutlet weak var medUIView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +30,8 @@ class TakePhotoVC: UIViewController, UIImagePickerControllerDelegate, UINavigati
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let pickedImage = info[.originalImage] as? UIImage {
-            medPhotoUI.contentMode = .scaleToFill
-            medPhotoUI.image = pickedImage
+            medUIView.contentMode = .scaleToFill
+            medUIView.image = pickedImage
         }
         picker.dismiss(animated: true, completion: nil)
     }

@@ -16,12 +16,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onMedTakePic(_ sender: Any) {
-        let takePhoto = TakePhotoVC()
+        let takePhoto = MedVC()
         takePhoto.takeAndSaveImage()
     }
     
     @IBAction func testPic(_ sender: Any) {
-        let takePhoto = TakePhotoVC()
+        let takePhoto = MedVC()
         takePhoto.takeAndSaveImage()
     }
 }
