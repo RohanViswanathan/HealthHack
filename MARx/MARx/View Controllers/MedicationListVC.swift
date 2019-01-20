@@ -41,9 +41,14 @@ class MedicationListVC: UIViewController, TableViewDelegate {
         var full = name.text!+";"+id.text!
         full += ";"+info.text!
         full += ";"+days.text!+";"+times.text!
-        var meds = UserDefaults.standard.array(forKey: "meds") as! [String]
-        meds.append(full)
-        
+        var meds = UserDefaults.standard.array(forKey: "meds")
+        if (meds != nil) {
+            meds = meds as! [String]
+            meds.append(full)
+        } else {
+            meds = []
+            meds?.append(full)
+        }
         UserDefaults.standard.set(meds, forKey: "meds")
         
         popup.isHidden = true
