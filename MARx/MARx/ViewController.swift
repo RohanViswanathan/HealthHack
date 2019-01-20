@@ -15,14 +15,5 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBAction func onMedTakePic(_ sender: Any) {
-        let takePhoto = MedVC()
-        takePhoto.takeAndSaveImage()
-    }
-    
-    @IBAction func testPic(_ sender: Any) {
-        let takePhoto = MedVC()
-        takePhoto.takeAndSaveImage()
-    }
 }
 

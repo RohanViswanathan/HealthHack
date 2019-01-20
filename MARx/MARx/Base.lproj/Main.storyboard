@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="466" y="-584"/>
         </scene>
-        <!--Medications-->
+        <!--Medication List-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Medications" customClass="ViewController" customModule="MARx" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Medication List" customClass="ViewController" customModule="MARx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,6 +46,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="+"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyI-Oi-s2x">
+                                <rect key="frame" x="127" y="95" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go to Med. Name"/>
+                                <connections>
+                                    <segue destination="QML-us-kKe" kind="show" id="sGk-GH-cPt"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -117,9 +125,11 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNN-Do-zsw">
                                 <rect key="frame" x="21" y="167" width="85" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="MedVC"/>
                                 <state key="normal" title="Take Picture"/>
                                 <connections>
                                     <action selector="onMedTakePic:" destination="7Vt-oQ-5sh" eventType="touchUpInside" id="A20-Y0-x92"/>
+                                    <action selector="takePhoto:" destination="QML-us-kKe" eventType="touchUpInside" id="chM-pm-BEk"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PHs-tf-8Ft" userLabel="MedicationImageTaker">
@@ -144,10 +154,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NYp-Oa-dwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="7Vt-oQ-5sh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2068" y="-170.46476761619192"/>
+            <point key="canvasLocation" x="2409" y="148"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="TTy-ta-jLp"/>
         <segue reference="oF1-hT-3bn"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -17,6 +17,9 @@ class MedVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCont
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func takePhoto(_ sender: UIButton) {
+        takeAndSaveImage()
+    }
     
     @objc func takeAndSaveImage() {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera) {
