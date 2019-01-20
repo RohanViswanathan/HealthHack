@@ -15,6 +15,8 @@
 		D1EF044321F4F31400A662D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EF044121F4F31400A662D4 /* LaunchScreen.storyboard */; };
 		D1EF044E21F4F31500A662D4 /* MARxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EF044D21F4F31500A662D4 /* MARxTests.swift */; };
 		D1EF045921F4F31500A662D4 /* MARxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EF045821F4F31500A662D4 /* MARxUITests.swift */; };
+		D25997BF21F4F838007C6E4F /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25997BE21F4F838007C6E4F /* Table.swift */; };
+		D25997C121F4F9E2007C6E4F /* Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25997C021F4F9E2007C6E4F /* Reminders.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		D1EF045421F4F31500A662D4 /* MARxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MARxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EF045821F4F31500A662D4 /* MARxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MARxUITests.swift; sourceTree = "<group>"; };
 		D1EF045A21F4F31500A662D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25997BE21F4F838007C6E4F /* Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
+		D25997C021F4F9E2007C6E4F /* Reminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminders.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			children = (
 				D1EF043521F4F31300A662D4 /* AppDelegate.swift */,
 				D1EF043721F4F31300A662D4 /* ViewController.swift */,
+				D25997BE21F4F838007C6E4F /* Table.swift */,
+				D25997C021F4F9E2007C6E4F /* Reminders.swift */,
 				D1EF043921F4F31300A662D4 /* Main.storyboard */,
 				D1EF043F21F4F31400A662D4 /* Assets.xcassets */,
 				D1EF044121F4F31400A662D4 /* LaunchScreen.storyboard */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25997C121F4F9E2007C6E4F /* Reminders.swift in Sources */,
 				D1EF043821F4F31300A662D4 /* ViewController.swift in Sources */,
 				D1EF043E21F4F31300A662D4 /* MARx.xcdatamodeld in Sources */,
+				D25997BF21F4F838007C6E4F /* Table.swift in Sources */,
 				D1EF043621F4F31300A662D4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
