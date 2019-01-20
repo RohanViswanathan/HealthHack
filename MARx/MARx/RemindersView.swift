@@ -30,6 +30,14 @@ class RemindersView: UIViewController, UIScrollViewDelegate {
     }
     
     @objc func buttonPressed(sender: UIButton!) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "MedVC")
+        self.present(controller, animated: true, completion: nil)
         
+        // Safe Present
+        if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MedVC") as? MedVC
+        {
+            present(vc, animated: true, completion: nil)
+        }
     }
 }
