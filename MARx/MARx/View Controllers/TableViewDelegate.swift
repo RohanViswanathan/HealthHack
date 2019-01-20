@@ -9,7 +9,6 @@
 import UIKit
 
 protocol TableViewDelegate: UIScrollViewDelegate {
-    func buttonPressed() {
-    
-    }
+    var mainView: UIView! {get set}
+    func buttonPressed()
 }

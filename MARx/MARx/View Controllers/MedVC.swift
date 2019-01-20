@@ -13,6 +13,7 @@ class MedVC: UIViewController, UIImagePickerControllerDelegate, UINavigationCont
     @IBOutlet weak var medUIView: UIImageView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
