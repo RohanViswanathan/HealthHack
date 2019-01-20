@@ -54,6 +54,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OVV-cG-AT4"/>
                     </view>
+                    <connections>
+                        <outlet property="medPhotoUI" destination="ykU-rZ-abo" id="vmS-93-XWL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXc-73-QA0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
