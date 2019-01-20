@@ -13,7 +13,7 @@ class Medication: Reminder {
     var imprint: String
     var dosage: String
     
-    var table: Table
+    //var table: Table
     
     init(imprint: String, dosage: String, howOften: String) {
         self.imprint = imprint
