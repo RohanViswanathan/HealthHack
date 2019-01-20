@@ -10,6 +10,6 @@ import UIKit
 
 protocol TableViewDelegate: UIScrollViewDelegate {
     func buttonPressed() {
-    
+        
     }
 }
