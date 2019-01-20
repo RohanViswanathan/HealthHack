@@ -23,10 +23,9 @@ class Reminder {
     }
     
     @objc func timerHandler(time: Double, timerTitle: String, timerMessage: String) {
-        timer = Timer.scheduledTimer(withTimeInterval: time, repeats: true) { timer in
+        _ = Timer.scheduledTimer(withTimeInterval: time, repeats: true) { timer in
             self.showAlert(title: timerTitle, message: timerMessage)
         }
     }
-    
-    
+
 }
