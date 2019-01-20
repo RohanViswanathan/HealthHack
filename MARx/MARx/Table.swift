@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class Table {
-    var boxes: [UILabel] = []
+    var boxes: [UIButton] = []
     var scroll = UIScrollView()
     
     
@@ -21,14 +21,21 @@ class Table {
         
         
         for i in 0...numBoxes {
-            let box = UILabel(frame: CGRect(x: 1, y: 20+(i*100), width: width+2, height: 100))
-            box.text = "Hello"
+            let box = UIButton(frame: CGRect(x: 1, y: 20+(i*100), width: width+2, height: 100))
+            box.setTitle("reminder", for: .normal)
             box.backgroundColor = UIColor.white
-            box.textColor = UIColor.lightGray
-            box.textAlignment = .center
+            box.titleLabel!.textColor = UIColor.lightGray
+            box.titleLabel!.textAlignment = .center
             box.layer.borderWidth = 1
             box.layer.borderColor = UIColor.lightGray.cgColor
+            box.addTarget(view, action: #selector(view.buttonPressed), for: .touchUpInside)
+            
+            let time = UILabel(frame: CGRect(x: 250, y: 20+(i*100), width: width-248, height: 100))
+            time.text = "12:00"
+            time.textColor = UIColor.lightGray
+            
             scroll.addSubview(box)
+            scroll.addSubview(time)
             boxes.append(box)
         }
         
