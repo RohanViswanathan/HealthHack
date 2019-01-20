@@ -30,6 +30,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="E54-Vl-EP8"/>
+                    <connections>
+                        <segue destination="QML-us-kKe" kind="show" id="TTy-ta-jLp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -38,7 +41,7 @@
         <!--Take Photo-->
         <scene sceneID="wkH-J6-OyD">
             <objects>
-                <viewController id="rz5-eD-yvJ" userLabel="Take Photo" sceneMemberID="viewController">
+                <viewController id="rz5-eD-yvJ" userLabel="Take Photo" customClass="TakePhotoVC" customModule="MARx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mu6-BU-Edu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -54,7 +57,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXc-73-QA0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2268" y="199"/>
+            <point key="canvasLocation" x="2964" y="-11"/>
         </scene>
         <!--Reminders-->
         <scene sceneID="n82-Ws-KY5">
@@ -100,6 +103,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LnB-Rf-eWe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="123"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8O1-vH-cNi">
+            <objects>
+                <viewController id="QML-us-kKe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u7h-z9-X1f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNN-Do-zsw">
+                                <rect key="frame" x="76" y="111" width="85" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Take Picture"/>
+                                <connections>
+                                    <segue destination="rz5-eD-yvJ" kind="show" id="W9h-Yz-HbZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="T9f-i6-iiC"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NYp-Oa-dwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2068" y="-170"/>
         </scene>
     </scenes>
 </document>
