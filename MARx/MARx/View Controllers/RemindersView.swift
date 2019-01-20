@@ -21,6 +21,12 @@ class RemindersView: UIViewController, TableViewDelegate {
         table = Table(numBoxes: 50, width: Int(screenWidth), height: Int(screenHeight)-20, view: self)
     }
     
+    @objc func buttonPressed(sender: UIButton!) {
+        let medView: MedVC = MedVC()
+        let newViewController = self.storyboard?.instantiateViewController(withIdentifier:"Med VC")
+        self.present(newViewController!, animated: true, completion: nil)
+    }
+    
     @objc func alertHandler(_ sender: Any, title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
@@ -28,9 +34,4 @@ class RemindersView: UIViewController, TableViewDelegate {
         self.present(alert, animated: true, completion: nil)
     }
     
-    @objc func buttonPressed(sender: UIButton!) {
-        let medView: MedVC = MedVC()
-        let newViewController = self.storyboard?.instantiateViewController(withIdentifier:"Med VC")
-        self.present(newViewController!, animated: true, completion: nil)
-    }
 }
