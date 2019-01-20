@@ -22,7 +22,7 @@ class Reminder {
         reminder.alertHandler(self, title: title, message: message)
     }
     
-    @objc func timerHandler(time: Double, timerTitle: String, timerMessage: String) {
+    @objc func timerHandler(time: Double, timerTitle: String, timerMessage: String) { //time in seconds
         _ = Timer.scheduledTimer(withTimeInterval: time, repeats: true) { timer in
             self.showAlert(title: timerTitle, message: timerMessage)
         }

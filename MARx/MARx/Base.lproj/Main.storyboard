@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+F<?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fhI-lK-gW8">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
@@ -268,7 +268,8 @@
             <point key="canvasLocation" x="2408.8000000000002" y="147.97601199400302"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>=
+    <inferredMetricsTieBreakers>
+        <segue reference="TTy-ta-jLp"/>
         <segue reference="oF1-hT-3bn"/>
     </inferredMetricsTieBreakers>
 </document>
