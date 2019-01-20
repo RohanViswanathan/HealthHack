@@ -25,7 +25,7 @@ class RemindersView: UIViewController, TableViewDelegate {
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
         let screenHeight = screenSize.height
-        table = Table(numBoxes: 50, width: Int(screenWidth), height: Int(screenHeight)+50, view: self)
+        table = Table(width: Int(screenWidth), height: Int(screenHeight)+50, view: self)
     }
     
     @objc func buttonPressed(sender: UIButton!) {
