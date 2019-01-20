@@ -68,18 +68,9 @@
                     <view key="view" contentMode="scaleToFill" id="mu6-BU-Edu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ykU-rZ-abo" userLabel="MedicationsImageTaker">
-                                <rect key="frame" x="67" y="143" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OVV-cG-AT4"/>
                     </view>
-                    <connections>
-                        <outlet property="medPhotoUI" destination="ykU-rZ-abo" id="vmS-93-XWL"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXc-73-QA0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -146,7 +137,7 @@
                                     <segue destination="rz5-eD-yvJ" kind="show" id="W9h-Yz-HbZ"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PHs-tf-8Ft">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PHs-tf-8Ft" userLabel="MedicationImageTaker">
                                 <rect key="frame" x="16" y="77" width="94" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>

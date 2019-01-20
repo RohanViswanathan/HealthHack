@@ -24,11 +24,7 @@ class TakePhotoVC: UIViewController, UIImagePickerControllerDelegate, UINavigati
             imagePicker.delegate = self;
             imagePicker.sourceType = UIImagePickerController.SourceType.camera
             imagePicker.allowsEditing = false
-            imagePicker.showsCameraControls = false
-            imagePicker.cameraFlashMode = UIImagePickerController.CameraFlashMode.on;
-            present(imagePicker, animated: false) {
-                imagePicker.takePicture()
-            }
+            self.present(imagePicker, animated: true, completion: nil)
         }
     }
     
@@ -38,8 +34,6 @@ class TakePhotoVC: UIViewController, UIImagePickerControllerDelegate, UINavigati
             medPhotoUI.image = pickedImage
         }
         picker.dismiss(animated: true, completion: nil)
-        
-        UIImageWriteToSavedPhotosAlbum(medPhotoUI.image!, nil, nil, nil)
     }
     
 
