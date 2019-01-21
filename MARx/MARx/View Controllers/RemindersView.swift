@@ -28,7 +28,7 @@ class RemindersView: UIViewController, UIScrollViewDelegate {
         table = Table(width: Int(screenWidth), height: Int(screenHeight)+50, view: self)
     }
     
-    @objc func buttonPressed(sender: UIButton!) {
+    func buttonPressed(sender: UIButton!) {
         let newViewController = self.storyboard?.instantiateViewController(withIdentifier:"Med VC")
         self.present(newViewController!, animated: true, completion: nil)
     }

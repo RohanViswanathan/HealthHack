@@ -45,7 +45,7 @@ class Table {
                     box.backgroundColor = UIColor.white
                     box.layer.borderWidth = 1
                     box.layer.borderColor = UIColor.lightGray.cgColor
-                    box.addTarget(view, action: #selector(RemindersView.buttonPressed), for: .touchUpInside)
+                    box.addTarget(view, action: #selector(buttonPressed), for: .touchUpInside)
                     
                     
                     let time = UILabel(frame: CGRect(x: 250, y: 50+(i*100), width: width-248, height: 100))
@@ -89,7 +89,7 @@ class Table {
             box.backgroundColor = UIColor.white
             box.layer.borderWidth = 1
             box.layer.borderColor = UIColor.lightGray.cgColor
-            box.addTarget(view, action: #selector(view.buttonPressed), for: .touchUpInside)
+            box.addTarget(view, action: #selector(buttonPressed), for: .touchUpInside)
             
             
             let time = UILabel(frame: CGRect(x: 250, y: 50+(i*100), width: w-248, height: 100))
@@ -104,7 +104,6 @@ class Table {
     }
     
     @objc func buttonPressed() {
-        print("in")
         view.buttonPressed()
     }
     
