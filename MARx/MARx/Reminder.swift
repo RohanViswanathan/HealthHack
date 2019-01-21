@@ -27,5 +27,9 @@ class Reminder {
             self.showAlert(title: timerTitle, message: timerMessage)
         }
     }
+    
+    @objc func daysToSecs(days: Double) -> Double {
+        return days * 24 * 60 * 60;
+    }
 
 }
