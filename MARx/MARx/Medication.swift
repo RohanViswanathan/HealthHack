@@ -18,7 +18,7 @@ class Medication: Reminder {
     init(imprint: String, dosage: String, howOften: String) {
         self.imprint = imprint
         self.dosage = dosage
-        super.init(howOften: howOften)
+        super.init()
     }
     
 }

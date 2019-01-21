@@ -10,16 +10,15 @@ import Foundation
 
 class Reminder {
     
-    var howOften: String
     var timer = Timer()
     
-    init(howOften: String) {
-        self.howOften = howOften
+    init() {
+        
     }
     
     @objc func showAlert(title: String, message: String) {
         let reminder = RemindersView()
-        reminder.alertHandler(self, title: title, message: message)
+        reminder.viewDidAppear(true)
     }
     
     @objc func timerHandler(time: Double, timerTitle: String, timerMessage: String) { //time in seconds

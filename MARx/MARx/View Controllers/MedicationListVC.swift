@@ -40,7 +40,7 @@ class MedicationListVC: UIViewController, TableViewDelegate {
     }
     
     @IBAction func save(_ sender: Any) {
-        
+        print("hello!")
         
         var full = name.text!+";"+id.text!
         full += ";"+info.text!
@@ -68,6 +68,14 @@ class MedicationListVC: UIViewController, TableViewDelegate {
         times.text = ""
         
         popup.isHidden = true
+        let timer = Reminder()
+        //for m in meds as! [String] {
+        print(days.text!)
+        print(name.text!)
+        timer.timerHandler(time: Double(0.5)*60.0, timerTitle: "Take "+name.text!, timerMessage: "Remember to take your medicine")
+            
+        //}
+        
     }
 }
 
