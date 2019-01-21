@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class RemindersView: UIViewController, TableViewDelegate {
+class RemindersView: UIViewController, UIScrollViewDelegate {
     var mainView: UIView!
     
     func buttonPressed() {
@@ -40,4 +40,7 @@ class RemindersView: UIViewController, TableViewDelegate {
         self.present(alert, animated: true, completion: nil)
     }
     
+    @IBAction func reload(_ sender: Any) {
+        table.reload()
+    }
 }

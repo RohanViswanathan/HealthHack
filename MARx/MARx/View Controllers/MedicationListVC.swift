@@ -26,6 +26,9 @@ class MedicationListVC: UIViewController, TableViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let med: [String] = []
+        UserDefaults.standard.set(med, forKey: "meds")
+        
         mainView = view
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
@@ -46,11 +49,23 @@ class MedicationListVC: UIViewController, TableViewDelegate {
         if (meds != nil) {
             var newmeds: [String] = UserDefaults.standard.array(forKey: "meds") as! [String]
             newmeds.append(full)
+            
+            UserDefaults.standard.set(newmeds, forKey: "meds")
         } else {
             meds = []
             meds?.append(full)
+            UserDefaults.standard.set(meds, forKey: "meds")
         }
-        UserDefaults.standard.set(meds, forKey: "meds")
+        
+        print(UserDefaults.standard.array(forKey: "meds") as! [String])
+        
+        self.view.endEditing(true)
+        
+        name.text = ""
+        id.text = ""
+        info.text = ""
+        days.text = ""
+        times.text = ""
         
         popup.isHidden = true
     }
